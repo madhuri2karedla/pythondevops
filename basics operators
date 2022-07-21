@@ -1,0 +1,38 @@
+course=input("enter course:")
+college=input("enter college")
+year=int(input("enter year:"))
+backlogs=int(input("bc"))
+branch=input("branch")
+gender=input("gen")
+percentage=int(input("per"))
+if(course=="btech" and college=="aec" and year==4 and backlogs==0 and percentage>=65 and( branch=="cse" or branch=="it")and gender=='M'):
+    print("yes")  
+else:
+    print("No")
+#functions
+def add(x,y=1):
+    c=x+y
+    return c
+    
+a=int(input("enter a value"))
+b=int(input("enter b value"))
+res=add(a,b)
+print(res)
+#modules
+import math
+print(math.sqrt(100))
+import math as m
+print(m.sqrt(100))
+from math import *
+print(sqrt(100))
+#error hadling:
+'''name error if method or var name is not there
+type error :type conversion erros like adding of str and int
+value error :datatype value must be same as i/p
+indexerror: array /list index out of bounds
+filenotfounderror: if file is not found
+with open("abc.txt") as f1:
+    pass
+'''
+
+
